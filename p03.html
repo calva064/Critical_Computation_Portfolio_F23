@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+
+      <h2>Experimental Clock</h2>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="600"
+          src="https://editor.p5js.org/calva064/full/JDY3AA9iK"
+          style="width: 40vw;"
+                
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+                For my experimental clock, I chose to draw a person aging over the course of a day, 
+        from sunrise to sunset, and view time as a function of age. I was keen to explore the notion of aging, since, on a daily basis, we can't see how we age.
+        Specifically, I wanted to explore how there is beauty in aging, as we live in an age of botox and plastic surgery. 
+
+      </p>
+      
+      <p>
+        My mom is an actress, and one of her physical features that I love most is her laughter lines. She has an expressive face, 
+        and her wrinkles tell stories of her life. This clock encourages us to consider how the memories and stories from our day become etched into our face. 
+
+      </p>
+
+      <!-- 4. reflection -->
+      <h3>Design Process and Reflection</h3>
+
+
+      <p>
+        
+        I began the design process with a quick brainstorm. I considered the ways in which entities can change over time, 
+        and I eventually narrowed my ideas down to three sketches: an aging clock, a color of leaves clock, and a menstrual
+        cycle clock.
+
+         </p>
+      <p>
+        
+        Here are photos of my notes from this initial brainstorming process:         </p>
+        <img
+src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-28%20at%2011.12.31%20AM.png?v=1695913987554"
+             />
+      <img
+        src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-28%20at%2011.12.51%20AM.png?v=1695913984454"
+           />
+
+        
+      <p>
+      These were my intentions behind each of the three sketches:
+      </p>
+      
+      <p>
+        
+        - The intention behind the aging clock, as mentioned, would be for the person in my sketch to age as the day passes(seconds tick by).
+        
+         </p>
+      <p>
+        - The intention behind the color of leaves clock would be for me to draw a tree that grows leaves whose colors change as time
+        passes, a way to visualize the changing of the seasons. Eventually, the tree would shed its leaves.
+      
+      </p>
+      <p>
+        - The intention behind the menstrual cycle clock would be to track the hormonal and emotional changes a woman experiences
+        over the course of her 28-day menstrual cycle.
+      
+      </p>
+
+      
+            <p>
+        While I liked the idea behind the color of leaves clock, I'm always looking to incorporate human elements
+        into my designs, so I rejected this idea. Though the menstrual clock, to some degree, incorporated
+        a human element, I felt the sketch could become overly complicated, given all of the interacting biological
+        processes that affect a woman's menstrual cycle. Plus, I felt most drawn to the idea of creating an aging clock,
+        since, of the three, it evokes the most emotion and tenderness. I realized, through working on this sketch, that I 
+        want people to describe my art as tender, comforting, or joyful, or be able to relate to the shared human experience
+        communicated through my art.
+        
+        </p>
+        
+        <p>
+        I began the sketch by drawing a man and considering physical markers of aging, like wrinkles and gray hair.
+        Over time, I wanted the man's hair to change color and face to become wrinkled. Drawing the
+        man took the most time, but once I'd drawn him, implementing if else statements to add wrinkles and change his hair
+        was relatively straightforward.
+          
+        </p>
+
+      <p>
+         After finishing the man, it dawned on me that the background of my sketch was boring. I should have put consideration
+          into what function the background would serve in my design during the brainstorming phase.
+          I realized, though, that it wouldn't be totally clear to someone engaging with my sketch that the man was aging
+          over the course of a day. This realization gave me inspiration to draw the sun rising and setting and moon rising 
+          and setting in the background to mark the passage of time. Using time to change the sun/moon's x and y position 
+          was challenging, since I wanted the sun/moon to travel in an arc-like shape. I ended up needing to use the modulo operator, 
+          after banging my head against a wall trying to get division to work, in order to acheive the desired result. In addition,
+          I ended up needing to make a separate if else condition for when t=45 seconds. Otherwise, the moon would bounce back to the x=0 position when
+          t=45.
+          
+        </p>
+
+        
+        <p>
+        I enjoyed making this sketch. As mentioned above, through this process, I discovered that I like making art that is tender, 
+        comforting, or brings people joy. 
+        </p>
+
+
+
+      <h3>References</h3>
+
+            <p>
+       I referred to the following resources for this project:
+      </p>
+        <p>
+        https://p5js.org/reference/#/p5/textFont
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=Ys1w9A4DrO4
+      </p>
+      <p>
+        https://imagecolorpicker.com/en
+      </p>
+      <p>
+        https://www.schemecolor.com/day-night-dark.php
+      </p>
+      <p>
+        https://palettemaker.com/colors/moon
+      </p>
+     <p>
+       https://www.colorcombos.com
+      </p>
+ 
+    </main>
+  </body>
+</html>

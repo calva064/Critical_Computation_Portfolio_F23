@@ -1,1 +1,0 @@
-# critical_computation_portfolio_F23

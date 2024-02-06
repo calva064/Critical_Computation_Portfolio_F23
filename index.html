@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | Critical Computation Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav></nav>
+    <!-- main content -->
+    <main></main>
+    
+    <div
+      style="
+        width: 70%;
+        position: fixed;
+        left: 450px;
+        bottom: -5px;
+        padding-bottom: 30%;
+      "
+    >
+      <iframe
+        src="https://giphy.com/embed/vC3n78esaxbHLtelEt"
+        width="30%"
+        height="70%"
+        style="position: absolute; bottom: 0; left: 540px"
+        frameborder="0"
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div
+      style="width: 100%; height: 0; padding-bottom: 100%; position: relative; bottom: 200px;"
+    >
+      <iframe
+        src="https://giphy.com/embed/ZAoThZZXEoJAnxMVI1"
+        frameborder="0"
+        width="30%" 
+        height="70%"
+        style="position: absolute; transform: translateX(-100%); transition: transform 2s linear;" 
+        class="giphy-embed"
+        allowfullscreen
+      ></iframe>
+    </div>
+    
+    <p>
+      <a
+        href="https://giphy.com/stickers/emm-merlinmurray-emerlinmurray-ZAoThZZXEoJAnxMVI1"
+        ></a
+      >
+    </p>
+
+    <p>
+      <a
+        href="https://giphy.com/stickers/awfultune-transparent-vC3n78esaxbHLtelEt"
+      ></a>
+    </p>
+
+    <script>
+      // Wait for the DOM to be ready
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select the bird iframe
+        const birdIframe = document.querySelector('iframe[src="https://giphy.com/embed/ZAoThZZXEoJAnxMVI1"]');
+
+        // Move the bird across the screen
+        moveGif(birdIframe);
+      });
+
+      // Function to move the GIF across the screen
+      function moveGif(gifIframe) {
+        // Get the screen width
+        const screenWidth = window.innerWidth;
+
+        // Start the GIF off-screen to the left
+        let currentPosition = -300;
+
+        // Function to animate the movement
+        function animate() {
+          
+          //temporarily reset so bird doesn't fly backwards
+          gifIframe.style.transition = 'none';
+          // Move the GIF to the right
+          currentPosition += 2; // Adjust the speed of movement
+          
+          // If the GIF goes off-screen to the right, reset its position
+          if (currentPosition > screenWidth) {
+            currentPosition = -1000;
+          }
+
+          // Apply the transformation to move the GIF
+          gifIframe.style.transform = `translateX(${currentPosition}%)`;
+
+          // Request the next animation frame
+          requestAnimationFrame(animate);
+        }
+
+        // Start the animation
+        animate();
+      }
+    </script>
+  </body>
+</html>

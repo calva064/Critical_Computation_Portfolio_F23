@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+
+      <h2>Exquisite Corpse</h2>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/u3NTnanME"
+                
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+        My primary goal this week was to push myself outside of my comfort zone. Taking on board Regina's feedback
+        from last week that the sketches I was producing were cartoonish and lacked variety, I wanted to try making something
+        different from my previous three sketches. I ensured to incorporate the required technical components into
+        my sketch, user-defined functions; arguments; and parameters, but beyond this I gave myself creative freedom
+        to explore and experiment. Please note that you may have to play the sketch directly
+        from my p5.js page rather than my Glitch portfolio, as I can't seem to hear the sound when I play the sketch from Glitch.
+        
+      </p>
+      
+      <p>
+       For part one of the assignment, I designed this non-human figure:     
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-05%20at%2010.29.15%20PM.png?v=1696559375188"
+           />
+      
+      <p>
+        Here is her backstory: This is Mrs. Spoon. She’s been around since the early 19th century, 
+        and she’s tired of people’s bullshit! While she’s over 200 years old, she never fails to look glamorous.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>Design Process and Reflection</h1>
+
+
+      <p>
+        Ultimately, I decided not to draw a human or non-human figure using the sketches me and my partners, Arden and Prashant, had drawn. I truly
+        wanted to give myself creative liberty to make something different this week and feel comfortable with creating
+        from a place of wanting to make something cool rather than restricting myself to the confines of an assignemnt. 
+        Since I'm passionate about music, I decided I wanted to design either an album cover or a website for a musician.
+        I looked at some musicians' websites for inspiration, and I also looked at album covers. Noticing that many musicians
+        feature photos on the covers of their albums, I was inspired to use images for my sketch. I also 
+        wanted to incorporate text into my sketch, since I haven't used text for the past three assignments.
+        
+         </p>
+      <p>
+        Since I sought to experiment with this sketch, I struggled to create an initial hand-drawn sketch
+        of what I planned to execute in p5.js; I knew I would be spending most of my time experimenting and playing around in p5.js
+        in order to get a sense for how I could develop my aesthetic. I did some basic mind-mapping, and here is an image of notes from my brainstorming session:
+
+         </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-06%20at%207.34.21%20AM.png?v=1696592073210"
+           />
+      
+      <p>
+        As the image above shows, some initial ideas I had were to: outline a woman's body using squiggles, pull music into p5.js, fade in/out elements, and incorporate music into my design that syncs up with animation.
+        I ultimately decided that I wanted to design some kind of 
+        kind of visual for a musician's website incorporating these ideas.
+    
+      </p>
+      
+      <p>
+        I began by loading album artwork from a musician I like, Rhye, into p5.js and experimenting with how the image was rendered.
+        I added a tint to the image and then began thinking about how I could incorporate text into my design. Since my sketch revolves around music,
+        I wanted to incorporate his song lyrics into my design. I thought that using song lyrics to outline or draw the woman in the image,
+        in order to create my human form, could be visually exciting.
+      </p>
+      
+      <p>
+        In order to know where to place the lyrics along the woman's body, I found a tutorial online that demonstrated how to trace an
+        image in p5.js by printing the mouse's X and Y coordinates to the console: console.log(mouseX,mouseY). I used this to get precise 
+        coordinates for my lyrics so that I was able to place them precisely along the curvature of her body.     
+      </p>
+      
+      <p>
+        While making this sketch, I learned how to load font into p5.js, create a tint on an image, and create a gradient with color. I also reviewed
+        several Coding Train videos to remind myself of how Noise works, as I wanted to use Noise in my sketch. While I considered incorporating
+        gradients and Noise into my sketch, I ultimately didn't like how my sketch looked when I did this. Here are some screenshots of my 
+        work in progress incorporating gradients:
+      </p>
+      
+        <img
+             src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-05%20at%209.45.47%20PM.png?v=1696559926188"
+        />
+<img
+     src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-05%20at%2010.39.36%20PM.png?v=1696559987234"
+        />
+        
+<p>
+        Taking inspiration from a collage I saw recently, I realized that my sketch would look better if I blacked out the background and part of the woman's arm so that the sketch
+        looked more like a collage than an image!
+  
+      </p>
+      
+      <p>
+       After implementing this change, I turned my attention back to the text. I was interested in making the text's color and size a function of time. I wanted
+        to load Rhye's music into p5.js and have the text fade/appear and get bigger/smaller depending on where in the song the music was playing. 
+        I ran into some hurdles while trying to do this. For one, I could not determine how to load the entire sound file into p5.js. p5.js said the file size 
+        was too big, so I ended up recording the audio on my phone and then loading that file into p5.js. Next, I took advantage of the millis() function
+        in order to control when the lyrics appeared on the screen so that they timed up with the music.
+        
+      </p>
+      
+      <p>
+        Overall, this week was a huge challenge for me. I threw myself into the deep-end, not letting myself rely on what I know and am comfortable with:
+        creating cartoonish characters out of 2D primitives. As a result, the end product of my experimentations is not as well-developed as I had envisioned,
+        and I would love to continue working on this sketch so that I can get the fade in/fade out part of my code to function better, since I think this would look great. Since I made
+        a lot of adjustments to my code, this affected the fade in/fade out lines I wrote in my code. I do like
+        how my sketch looks aesthetically, though. 
+        
+      </p>
+
+
+      <h3>References</h3>
+
+      <p>
+       I referred to the following resources while making this sketch:
+      </p>
+        <p>
+        https://p5js.org/reference/#/p5/tint
+      </p>
+      <p>
+        https://p5js.org/reference/#/p5/loadFont
+      </p>
+      <p>
+        https://editor.p5js.org/remarkability/sketches/rtM08miUD
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=mcCsze1CrQ4
+      </p>
+    
+      <p>
+       I used Rhye's song "Needed" as background music, and the image in my sketch is taken from the cover of his album, Woman.
+      </p>
+      
+      
+    </main>
+  </body>
+</html>

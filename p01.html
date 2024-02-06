@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+      <h2>Lost and Found</h2>
+    
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+        
+        
+        <iframe
+          allow="camera"
+          height="420"
+          style="width: 27vw;"
+          src="https://editor.p5js.org/calva064/full/7yqfKh0pU"
+                
+        ></iframe>
+        
+        <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+        I chose to draw my stuffed animal from childhood, Boo Boo. I wanted to 
+        explore the notion of loss in terms of how pieces of an object - 
+        in this case, fur, shape, and color - can be lost over time and how 
+        loss can be a direct result of love.
+      </p>
+
+      <!-- 4. reflection -->
+      <h3>Design Process and Reflection</h3>
+
+      <p>
+        Provided by my partner, Sarah Celidonio:
+        
+        "When I was young, I had a necklace that I loved. 
+        It was one of those clear teardrop-shaped pendants with a bug encased inside. 
+        This necklace had a green, iridescent scarab beetle set in the middle and was
+        about 2.5 inches tall by 2 inches wide with a 1 inch beetle inside, 
+        hanging from a black lanyard."
+         </p>
+      <p>
+        
+        The language Sarah used to describe the object, a pendant with a bug encased 
+        inside on a lanyard, was specific but relied on the assumption that I had already
+        seen the object, or an object like it, before. She referred to the necklace as 
+        “one of those…” which suggested she believed I was familiar with those necklaces, 
+        which I luckily was, so I already had a mental reference point for how I might draw
+        the necklace. Sarah provided specific dimensions for the object in inches and described 
+        the color of the object. The only detail she didn’t provide was about the object’s material. 
+        I assumed that the pendant was made of glass, plastic, or some kind of jewel, 
+        since she described the pendant as clear, but this was left open to interpretation to
+        some degree as was determining what material the lanyard was made from.
+         </p>
+      <p>
+        
+        Initially, I planned to draw the necklace that Sarah had described to me. 
+        Here is an initial sketch I drew by hand and some of my notes:
+         </p>
+        <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-14%20at%208.57.53%20PM.png?v=1694741506267"
+        />
+        <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-14%20at%208.57.44%20PM.png?v=1694741510819"
+        />
+        
+      <p>
+        I realized, though, after drawing my sketch that the sketch was too detailed for it to easily be translated into code; 
+        I need to boil the object down to its basic shapes, elements, and lines. Here is a screenshot of my initial experimentations 
+        with this sketch:
+         </p>
+        
+        <iframe
+        allow="camera"
+          height="450"
+          src="https://editor.p5js.org/calva064/full/0FlGce4XN"
+        
+        ></iframe>
+        
+      <p>
+        
+        I found myself becoming frustrated throughout the process of creating this sketch, 
+        because I ultimately wasn’t inspired by the prompt. I wanted to do something that had
+        meaning to me, so I began thinking more about the notion of loss or a lost object. 
+        I thought about a stuffed animal that I had when I was a little kid: a black and
+        white panda, named Bamboo (Boo Boo for short.) I carried Boo Boo around with me everywhere,
+        dragging him along the ground by his paw. His white fur turned grey, shape distorted, 
+        and mouth began to fray. Exposed patches of mesh even developed on his face and body 
+        from where his fur had rubbed away.
+      </p>
+      <p>
+      
+        I chose Boo Boo as my object, since I was inspired to think about loss within the context of 
+        losing parts of an object – color, shape, and fur - rather than a whole object itself. 
+        I also wanted to reframe loss and explore how loss can be a direct result of love. Boo Boo 
+        is definitely well-loved.
+      </p>
+      <p>
+ 
+        I began by drawing Boo Boo to get a feel for what shapes I wanted to use in P5. Then, 
+        implementing the lesson I learned from drawing the pendant and trying to translate that to code, 
+        I ensured to boil my sketch down to basic shapes like 2D primitives that I knew I would be able 
+        to re-create in P5:
+     </p>
+        <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-14%20at%209.45.19%20PM.png?v=1694742332341"
+        />
+        
+      <p>
+        Given that I have some prior experience with P5, I chose to incorporate some of that experience 
+        into my sketch while also remembering that the focus of the assignment was to use 2D primitives 
+        and functions like translate, rotate, push, pop, fill, and blend Mode. For the most part, 
+        I used several ellipses to create the desired shape!
+      </p>
+      <p>
+        At first, I just drew Boo Boo, but then I began thinking about my memories tied to Boo Boo and how
+        he was always a source of comfort, particularly at night when I had nightmares. I then began thinking 
+        about what our favorite stuffed animals do at night while we’re asleep. I pictured Boo Boo staring at 
+        the moon and gazing at the stars, so I thought it would be sweet to draw an image of him staring at the
+        moon. I took advantage of the random function to create blades of grass. I also used the curveVertex function,
+        a function I’d never used before, for making some of the more awkward shapes. Finally, to create the stars, 
+        I used a loop. The stars are scattered evenly in the sky, which was a design decision; I know, realistically, 
+        that stars are neither evenly spaced apart nor low in the sky, but I liked the way my design looked, so I 
+        kept it that way, even if it doesn’t make logical sense.
+      </p>
+
+      <h3>References</h3>
+
+      <p>
+       I referred to the following resources when learning how to use the arc, blendMode, and curveVertex functions for this project:
+        <p>
+         https://p5js.org/learn/curves.html 
+      </p>
+        <p>
+          https://p5js.org/reference/#/p5/curveVertex
+      </p>
+      <p>
+        https://p5js.org/reference/#/p5/blendMode
+      </p>
+        
+        
+      </p>
+      
+      </div>
+
+      
+      
+      
+      
+    </main>
+  </body>
+</html>

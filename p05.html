@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+
+      <h2>Optical Illusion</h2>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/Q6lbVp7EJ"
+                
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+         For this sketch, I drew a bar code optical illusion. When looking at the canvas, the colored lines
+         that make up the bar code appear to be purple or yellow. In fact, only red (255,0,0) 
+         and blue (0,0,255) dots were used to draw the "purple" lines and only red (255,0,0) and green (0,255,0) dots were used to draw the 
+         "yellow" lines. Because of how our brain processes stimuli, to the naked eye, these lines appear to be a combination of either red and blue (purple) or green and red (yellow);
+         we cannot separate out the red from the blue or the red from the green unless we zoom in on the sketch.
+  
+      </p>
+            <!-- 4. reflection -->
+      <h3>Design Process and Reflection</h3>
+      <p>
+        For this sketch, I began brainstorming ideas for different optical illusions that I might want to replicate.
+        I started thinking about different toys I played with as a kid and considering if any of them incorporated 
+        optical illusions.
+      </p>
+        
+        <img
+        src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%209.04.55%20PM.png?v=1696986382525"
+        />
+        
+        <p>
+        I looked at some previous students' projects for inspiration, and I noticed one student, Archit Saxena, used 
+        mathematical concepts in their optical illusion. I was inspired by this student, because I studied mathematics
+        in college, and so I decided to incorporate mathematics into my optical illusion. 
+        </p>
+        <img
+             src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%209.05.07%20PM.png?v=1696986375975"
+        />
+        
+      <p>
+        I took a geometry class during my junior year of college, and we discussed the applications of geometry in art,
+        like drawing in perspective, for instance, so I thought this 
+        would be an interesting place to start. I went back through my PowerPoint slides from college from this 
+        particular class to see if anything inspired me. I came across something called the Poincaré disk, 
+        which uses orthogonal circles to create curves inside of a circle. Poincaré disks create an interesting
+        optical illusion, because objects inside a Poincaré disk seem to get
+        smaller towards the boundary of the disk when, in reality, all objects inside the disk are the same size in
+        the hyperbolic plane.
+      </p>
+        
+        <img
+        src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%2011.30.28%20PM.png?v=1696995037727"
+             />
+ 
+        <img
+             src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%209.05.15%20PM.png?v=1696986371849"
+             />
+     
+        <img
+             src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%209.19.52%20PM.png?v=1696987204625"
+             />
+        <p>
+        I was inspired by artist M.C. Escher who creates art using Poincaré disks to create my own version. Here is an example of one of M.C. Escher's
+          pieces inspired by the Poincaré disk:
+      </p>
+          
+          <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%2011.39.20%20PM.png?v=1696995583350"
+               />
+         
+      <p>
+        I decided to make an album cover for a musician I like, Arlo Parks, that incorporated a Poincaré disk. I was inspired by her song, Eugene, which mentions 
+        different purple-colored objects and shades of purple, like amethyst, violet, and purple lips. I decided to 
+        import an image of amethyst into p5.js for the background and then planned to use purple lips with a cigarette hanging
+        out of them as my object that I would draw repeatedly inside the Poincaré disk, because one of her song lyrics is "purple lips with cigarettes."    
+
+      
+      </p>
+      
+   <img
+             src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-10%20at%209.19.35%20PM.png?v=1696987207772"
+        />
+      
+      <p>
+        I intended to go about this by first drawing the Poincaré disk with the orthogonal curves inside of it
+        and then drawing and importing images of purple lips and cigarettes into the sketch and aligning them along the
+        curves. I spent a few hours refamiliarizing myself with the mathematics of how the Poincaré desk 
+        works so that I could accurately draw the curves inside the disk. Unfortunately, I found drawing an orthogonal curve to
+        an ellipse challenging. I tried using an if statement and the angleBetween() function to draw these orthogonal curves. 
+        I tried using Pythagorean theorem and the equation of a circle, (x-h)^2+(y-k)^2=r^2 to determine where two points on a curve orthogonal to the Poincaré disk should fall. 
+        Sadly, I kept running into issues that slowed my progress. For instance, only after a while did I realize
+        that I needed to adjust the equation of the circle because in p5.js, the positive y axis is down, not up. Despite everything I tried,
+        I couldn't acheive the desired outcome: drawing orthogonal curves on a disk to create a Poincaré disk. After two days of trying to 
+        get this to work, I realized that I  needed to switch my idea. While this Poincaré disk idea is something 
+        I would love to revisit, in the interst of time, I needed to move on.
+        Below is the embedded iframe with some of the code from
+        my attempts at getting this to work. This includes code that is commented out:
+      </p>
+           <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/MygOx9KFs"
+                
+        ></iframe>
+      
+      <p>
+      I decided to switch gears and try something different. When I was initially brainstorming ideas for my optical illusion, 
+      I was also interested in trying to replicate some kind of texture. I decided to take a photo of my cat's fur, pixel process it, 
+      and try to make it look kind of funky. I used the get(x,y) function to get the RGB values of each pixel and then
+      draw an ellipse at that particular x,y value filled with the same RGB values as the image at that particular x,y value. From there,
+      I planned to experiment further with color, shape, and texture.  Unfortunately, I unexpectedly ran into issues again.
+      My for loop that drew the ellipses would only seem to iterate on one particular Y value for all X values. The nested loop simply wasn't working.
+      I wasn’t sure why, because when I created the drawCirc() function that took y as an argument, it worked (see embeded iframe below). My code also kept throwing an infinite loop error.
+      Eventually, I decided to abandon this idea too, because my code simply wasn't working in the way I wanted it to, and I didn't think
+        my sketch looked like an optical illusion. This is as far as I got with pixel processing the image of my cat's fur:
+      </p>
+      
+      <p>
+        Original image:
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-09%20at%209.08.41%20PM.png?v=1696986396478"
+           />
+      <p>
+        Pixel processed image:
+      </p>
+    
+    <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/h7EkllrP1"
+                
+        ></iframe>
+
+
+      <p>
+        For my final sketch, I decided to create an optical illusion with color and play around with Noise in order to achieve this.
+        I'm happy with my use of Noise to create the bar code, because I didn't want the lines to be evenly spaced, but equally I didn't want them to be 
+        erratically scattered. As mentioned above, my final bar code sketch works as an optical illusion due to the brain's ability to simplify stimuli. 
+        
+        <p>
+        Originally, the 5th argument in each of the mapping functions was static:
+      </p>
+      <p>
+    xpos = map(noise(xoff), 0, 1, 0, width);
+    ypos = map(noise(yoff), 0, 1, 0, height);
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-12%20at%2011.22.12%20AM.png?v=1697124183092"
+           />
+      <p>
+        As a result, the lines in my sketch were scattered both horizontally and vertically. I wasn't happy with how this looked, so
+        I decided to incorporate a nested for loop into my sketch and have the 5th argument change on each iteration of the loop. As a result,
+        the lines only appeared vertically now.
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-12%20at%2011.22.30%20AM.png?v=1697124185174"
+           />
+        
+        <p>
+          I wanted the lines to extend all the way down the page, so I changed y to 2y and achieved my final result. I'm happy with
+          the visual effect the ellipses give in making the sketch look like a realistic bar code.
+      </p>
+
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-12%20at%2011.22.47%20AM.png?v=1697124187500"
+           />
+        
+    <p>
+        I wanted to add numbers to my bar code by adding text to the canvas and rotating it. Unfortunately, p5.js kept crashing when I tried to do this,
+        so I wasn't able to incorporate the numbers into my sketch:
+         </p>
+      
+      <img
+        src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-10-12%20at%2010.50.43%20AM.png?v=1697122866696"
+      />
+
+    <p>
+      When thinking about how to deploy this optical illusion in the real world, I could envision it being featured
+      on the back of a vinyl record sleeve, for instance. When scanned, a preview of the songs on the record could play.
+      
+    </p>
+    
+    
+      <p>
+        Overall,I have mixed feelings about my sketch this week. This week, I learned that sometimes, despite our best 
+        efforts, we aren’t always able to execute on our intended vision, especially when we have  strict time 
+        constraints and competing responsibilities. I learned that it’s important to know when to pivot 
+        and  recognize that an idea is not working. I'm the kind of person who likes to keep chipping 
+        away at something until I can get it to work, sometimes to a fault because it becomes all-consuming. Despite resistance, I had to be 
+        force myself to be comfortable with pivoting, knowing that I could return to either of my two unfinished ideas in subsequent weeks.
+        
+      </p>
+
+
+      <h3>References</h3>
+      <p>
+        For the sketch of the Poincaré disk, I referenced this website:
+      </p>
+
+      <p>
+        https://pi.math.cornell.edu/~mec/Winter2009/Mihai/section7.html
+      </p>
+      
+      <p>
+        For the sketch of my cat, I used these references:
+      </p>
+      <p>
+        //https://p5js.org/reference/#/p5/get
+      </p>
+      <p>
+       //https://p5js.org/reference/#/p5.Image/get
+      </p>
+      <p>
+        For the Noise sketch, I referenced an old project I did on Noise, as well as the following
+        Coding Train videos:
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=Qf4dIN99e2w&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=YcdldZ1E9gU&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD&index=2
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=YcdldZ1E9gU&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD&index=2
+      </p>
+      <p>
+        https://compform.net/js_lab/js_lab.html?https://sketches2022fall.compform.net/posts/H7N5XAYrzaiRj4S2a/code
+      </p>
+
+      
+      
+    </main>
+  </body>
+</html>

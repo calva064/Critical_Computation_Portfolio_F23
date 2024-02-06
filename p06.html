@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+
+      <h2>Data Portrait</h2>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/qeP31CB7x"
+                
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+         For this sketch, I used data from a week's worth of text conversations with my mom. I speak with my mom
+         every day, and I've never deleted our text conversations. I decided to visualize our messages but wanted
+         to take more of an abstract approach to visualization and avoid drawing shapes with 2D primitives, 
+         as I've been inclined to do in the past. I was curious to see what kinds of language we use with each other. In this portrait, 
+         each ring corresponds to a different word. The color of each word is dependent on what letter the word starts with and the word's length.
+         In addition, the radius of each ring is dependent on the length of the word. Here is an example: the word 
+         "crappy" appears in my array. Since crappy starts with a "c," the ring crappy creates will be blue, since I decided that any words that start with
+        c will be colored blue. I used a mapping
+         function to map the length of the words to rgb values, c=map(messageArray[i].length,1,17,0,255), and since
+         crappy is 6 letters long, 6 will be mapped to the number 31.875. This value will be our blue value, so crappy
+         will create a very dark blue ring. In addition, since crappy is 6 letters long, the scalar value that the x and y 
+         values for the ring will be multiplied by will be 6*50=300.
+         
+  
+      </p>
+            <!-- 4. reflection -->
+      <h3>Design Process and Reflection</h3>
+      <p>
+        
+      </p>
+      
+        
+        <p>
+
+To begin, I manually selected all of the messages from my iMessage conversation with my mom over the past week, like so: 
+      </p>
+      
+      <img
+           src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/IMG_5651.jpg?v=1697771116421"
+           />
+      
+      <p>
+        Here is an snippet of my numbered list of our messages, which I then converted into an array of words. I didn't want to include the whole conversation,
+        because some these messages are private:
+      </p>
+      
+      <p>
+1. Stormi is wailing in the Uber 
+      </p>
+      <p>
+2. She’s being so brave now
+      </p>
+      <p>
+3. We made it
+      </p>
+      <p>
+4. She did it she was so brave 
+      </p>
+      <p>
+5. Miss you
+      </p>
+      <p>
+6. Miss you too, little one 
+
+      </p>
+      
+      
+      <p>
+          
+          
+          I then sent these messages as one text message to myself, and I copied and pasted this message into the Notes application on my computer. 
+      </p>
+      
+      
+
+          <p>
+          Next, I turned to Excel in order to clean the data. I used chatGPT to teach me how to use data cleansing functionality in Excel.
+  
+      </p>
+
+      <p>
+        I copied and pasted the text into Excel, and then I asked chatGPT about how I could separate the sentences into individual words in each column. This involved using the text to columns functionality where spaces were the delimiter. Next, I copied and pasted all of the data into a singular column and removed any duplicate words and punctuation.
+
+      </p>
+
+      <p>
+        Then, I copied and pasted the data into chatGPT and asked it to separate each piece of data (each word) with commas and put quotation marks around each word. My data array was now ready! I copied and pasted this into my sketch in order to create my wordArray. I then decided to map different features of the words to different parts of the visualization in my sketch:
+
+      </p>
+      <p>
+        — the length of the word determined the size of the text and the radius of the ring it created
+      </p>
+
+      <p>
+        - the length of the word determined the vibrance of the color of the text
+      </p>
+
+      <p>
+        - the first letter of the word determined the color of the text
+      </p>
+      
+
+      
+      <p>
+        I was planning on using all of the words from the text messages with my mom, but I didn't want to overcrowd the canvas, so I decided to only use words that started with letters a-f.
+      </p>
+      
+      <p>
+        Here is an earlier version of my sketch that I created while I was experimenting. The code itself needs cleaning up, but
+        I thought the sketch resembled paint strokes, and I liked how it look, so I'd definitely consider revisiting this! 
+        Ultimately, I wanted the words in my sketch to be somewhat visible, which is why I took my sketch in a slightly different direction.
+      </p>
+        
+          <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="400"
+          src="https://editor.p5js.org/calva064/full/c1R-Ip-z6"
+                
+        ></iframe>
+      </div>
+      
+      <p>
+      Through the process of collecting and manipulating this data, I was able to get an understanding of what language I use
+      and topics I discuss with my mom regularly. Through the process of visualization, my privacy was enhanced, because the words
+      were taken out of context, thus rendering the messages illegible. As a result, the context was also lost, meaning that another person
+      wouldn't be able to interpret these text conversations with the visualization alone. 
+      
+      
+       
+      <h3>References and Resources:</h3>
+   
+      <p>
+        https://editor.p5js.org/benmoren/sketches/AWT7vrqUB
+      </p>
+      
+      <p>
+        https://editor.p5js.org/2sman/sketches/TCBAysSWT
+      </p>
+      
+      <p>
+        For the font:
+      </p>
+      
+      <p>
+        https://www.fontspace.com/category/ttf
+      </p>
+      
+      <p>
+        To ask questions about Excel formulas, mathematical formulas, and for formatting the array:
+      </p>
+      <p>
+        https://chat.openai.com/c/7b6fc75c-11a6-41f9-8212-4e9223eca568
+        
+      </p>
+      
+
+    </main>
+  </body>
+</html>

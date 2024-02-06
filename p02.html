@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ariel Calver | CC Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <nav></nav>
+    
+    <!-- main content -->
+    <main>
+      <!-- 1. give your project  a title -->
+
+      <h2>Form Generator</h2>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          height="400"
+
+          src="https://editor.p5js.org/calva064/full/YPfDvkgtK"
+                
+        ></iframe>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h3>Description</h3>
+
+      <p>
+        I chose to draw a woman dancing and singing to music, since I'm a dancer and music-lover. I wanted to 
+        explore how to load sound into p5.js and animate the woman's movements while playing with color
+        and facial expression.
+      </p>
+
+      <!-- 4. reflection -->
+      <h3>Design Process and Reflection</h3>
+
+
+      <p>
+        
+        I began this project by doing a 5-minute brain dump. I was inspired by a free-write exercise we did in MS1, 
+        where we were required to write a 5-minute reflection without removing our pen from the page. 
+         </p>
+      <p>
+        
+        Here is a photo of my notes from my initial brain dump:
+         </p>
+        <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-21%20at%206.03.39%20PM.png?v=1695333864059"
+        />
+
+        
+      <p>
+        After looking through my ideas, I realized I was most drawn to the first one: drawing someone dancing and listening to music. 
+        Once I settled on this idea, I created two hand-drawn sketches to visualize the intention for my design:
+         </p>
+      
+         <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-21%20at%206.03.53%20PM.png?v=1695333861837"
+        />
+      <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-21%20at%206.04.00%20PM.png?v=1695333853815"
+        />
+        
+      <p>
+        In translating my design to p5.js, I found that having the handrawn sketch on the 400x400 grid was useful. 
+        This is a process I will implement when creating my next sketch.
+        </p>
+        <p>
+        Overall, the process of creating this sketch was challenging, given how many different components I wanted to incorporate into it.
+        I definitely set myself a challenge! 
+        </p>
+        <p>
+        I began by drawing the woman. Given that I love to draw, I realized, while creating this sketch, that one of my strengths and weaknesses
+        is that I like my work to look beautiful, which means I spend longer paying attention to small details
+        than I perhaps should. For instance, in order to make the woman's hands look more realistic, I slightly darkened the color of the two inner
+        fingers on her hand so that her fingers looked visually distinct. I also added nail polish to make her fingers pop. I love paying attention to little details like this, but often it can slow me down!
+        </p>
+        <p>
+        Next, I knew I wanted to learn how to load sound into p5.js, since the woman in my sketch is listening to music. I tried loading one of my favorite songs into p5.js, 
+        but I sadly realized that the file size limit for audio files in p5.js is 0.5mb, so I turned to YouTube's audio library, where I was able to 
+        download a free audio clip that I could upload as an asset to p5.js. I referenced a Coding Train video and p5.js documentation in order to achieve this (references are provided below)
+        From these references, I was inspired to use the mousePressed() function to stop and start the music. I also decided to change the color of the
+        woman's headphones when the mouse was pressed. Despite having access to these resources, it took me a while to get the sound working.
+        </p>
+        <p>
+        Afterwards, I turned my attention towards the background. From our in-class critique last week, my main takeaways were to be intentional with 
+        every decision I make in my work and to pay attention to the background! I decided I wanted musical notes to be moving across the screen behind 
+        the woman. I referenced the Coding Train bouncing ball video in order to help me with this. I had some issues with my for loop when creating the musical
+        notes. I found that, unless I had noLoop() written in my setup function, then the musical notes would bounce erratically across the page, but, if I
+        had noLoop() in my setup function, then it would interfere with all of the other functions I planned to use for my sketch like mousePressed. While
+        this portion of the code isn't elegant, I spent so much time trying to get the for loop to work, that eventually I had to create the musical
+        notes by brute force if I wanted to finish my sketch on time.
+        </p>
+        <p>
+        Then, I began to explore mouseX and mouseY. I decided to use mouseY to change the shape of the woman's mouth, as if she were singing. While
+        making her mouth into an ellipse would make the image more realistic, and I tried this, 
+        I ultimately liked how the woman's lips looked when I also used arcs to create them:
+        </p>
+          <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-21%20at%206.35.48%20PM.png?v=1695335779396"
+          />
+          <img
+          src="https://cdn.glitch.global/243f2e74-eb0b-41b9-8c26-f5d42f14d9ff/Screenshot%202023-09-21%20at%206.35.56%20PM.png?v=1695335776222"
+          />
+          
+        
+        <p>
+        I then decided to use mouseX to make the woman's arms move left and right, as if she were dancing. Originally, I drew the woman's arms
+          criss-crossed, as in the first image above, but I realized this may look slightly confusing, so I modified her arms to just move side to side.
+          I also drew her hands so that they mimic the rock on symbol.
+        </p>
+      
+      <p>
+        At the last minute, I also decided to add text to my canvas to explain how to use my sketch.
+      </p>
+      
+        <p>
+          While creating this sketch, I attempted several things which I ultimately didn't implement because I was struggling after devoting a lot of time to them, 
+          but here are some other ideas I had:
+          <p>
+           - Giving the woman freckles 
+      </p>
+          <p>
+           - Using an array to load songs into and then allow users to pick and choose the songs using left and right arrow keys on the keyboad
+
+      </p>
+          
+      </p>
+        
+        <p>
+        My main observation about the form I chose, a woman singing and dancing, upon completing this assignment, is not to limit myself by the 
+        bounds of reality. While I want people to be able to recognize what I'm trying to portay, if I want to make the woman's mouth physically
+        larger or more curved than what is realistic, for instance, I should go for it!
+        </p>
+      
+
+      <h3>References</h3>
+
+      <p>
+       I referred to the following resources for this project:
+        <p>
+         https://p5js.org/reference/#/p5/arc
+      </p>
+        <p>
+          https://p5js.org/examples/sound-load-and-play-sound.html
+      </p>
+      <p>
+        https://www.youtube.com/watch?v=Pn1g1wjxl_0&list=PLRqwX-V7Uu6aFcVjlDAkkGIixw70s7jpW
+      </p>
+        <p>
+          https://p5js.org/reference/#/p5/keyPressed
+      </p>
+        <p>
+          Song Credits: Otis McMusic (Sting) - Otis McDonald
+          https://studio.youtube.com/channel/UCSGet4osMMpyGpcaHRccxzA/music
+      </p>
+      <p>
+        https://p5js.org/reference/#/p5/textFont
+      </p>
+      </p>
+      
+      
+      
+      
+    </main>
+  </body>
+</html>

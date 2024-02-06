@@ -1,1 +1,1 @@
-# critical_computation_portfolio_F23
+This site showcases my work from Critical Computation Lab, fall 2023, taught by Katherine Moriwaki and Elizabeth Perez. This comprises a portfolio that documents my projects, small and large, from 2D primitives to object-oriented programming in a game.
